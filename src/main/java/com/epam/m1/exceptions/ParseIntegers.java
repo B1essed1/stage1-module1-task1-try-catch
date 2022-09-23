@@ -1,6 +1,6 @@
 package com.epam.m1.exceptions;
 
-import java.text.ParseException;
+
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
@@ -33,8 +33,8 @@ public class ParseIntegers {
             }
 
         }
-        logger.log(Level.INFO, String.valueOf("Sum is "+ sum));
-        logger.log(Level.INFO, String.valueOf("Just words:" + justWords));
+        logger.log(Level.FINE, String.valueOf("Sum is "+ sum));
+        logger.log(Level.FINE, String.valueOf("Just words:" + justWords));
     }
 }
 

@@ -1,8 +1,10 @@
 package com.epam.m1.exceptions;
 
+import java.text.ParseException;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -20,18 +22,19 @@ public class ParseIntegers {
     public static void main(String[] args) {
         Iterator<String> words = WORDS.iterator();
         int sum = 0;
-        String justWords = "";
+        StringBuilder justWords = new StringBuilder() ;
         while (words.hasNext()) {
             String next = words.next();
             try {
                 sum += Integer.parseInt(next);
 
-            } catch (Exception e){
-                justWords += next + " ";
+            } catch (NumberFormatException e){
+                justWords.append(next+" ");
             }
 
-            // todo: complete it
         }
+        logger.log(Level.INFO, String.valueOf("Sum is "+ sum));
+        logger.log(Level.INFO, String.valueOf("Just words:" + justWords));
     }
 }
 

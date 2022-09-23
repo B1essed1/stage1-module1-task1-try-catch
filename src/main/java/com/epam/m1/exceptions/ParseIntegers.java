@@ -4,7 +4,6 @@ package com.epam.m1.exceptions;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**

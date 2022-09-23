@@ -12,7 +12,7 @@ import java.util.logging.Logger;
  * space delimiter
  */
 public class ParseIntegers {
-    public static Logger logger = Logger.getLogger(ParseIntegers.class.getName());
+    public static final Logger logger = Logger.getLogger(ParseIntegers.class.getName());
 
     private static final List<String> WORDS =
             Arrays.asList(

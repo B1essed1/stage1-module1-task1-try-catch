@@ -32,8 +32,8 @@ public class ParseIntegers {
             }
 
         }
-        logger.fine("Sum is "+ sum);
-        logger.fine("Just words:" + justWords);
+        logger.fine(String.format("Sum is %d",sum));
+        logger.fine(String.format("Just words:%s", justWords));
     }
 }
 

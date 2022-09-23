@@ -33,8 +33,8 @@ public class ParseIntegers {
             }
 
         }
-        logger.log(Level.FINE, String.valueOf("Sum is "+ sum));
-        logger.log(Level.FINE, String.valueOf("Just words:" + justWords));
+        logger.fine("Sum is "+ sum);
+        logger.fine("Just words:" + justWords);
     }
 }
 
